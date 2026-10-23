@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦЕНТР «МИРОТВОРЕЦЬ» / БАЗА ДАНИХ</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Верхня панель / Шапка */
+        .header {
+            background-color: #0b1e36;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid #d9534f;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #ffca28;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-title h2 {
+            margin: 3px 0 0 0;
+            font-size: 13px;
+            color: #ffca28;
+            font-weight: normal;
+        }
+
+        /* Головний контейнер */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* Статус банер */
+        .status-banner {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Картка профілю */
+        .profile-card {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 260px;
+            height: 320px;
+            object-fit: cover;
+            border: 3px solid #333;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .profile-status {
+            background-color: #000;
+            color: #ff4d4d;
+            width: 100%;
+            text-align: center;
+            padding: 8px 0;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        /* Інформаційний блок */
+        .info-box {
+            width: 100%;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .info-header {
+            background-color: #d9e2ec;
+            color: #102a43;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 16px;
+            border-bottom: 1px solid #bcccdc;
+        }
+
+        .info-content {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #334e68;
+            margin-top: 10px;
+        }
+
+        .crimes-list {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .crimes-list li {
+            margin-bottom: 6px;
+        }
+
+        /* Футер */
+        .footer {
+            background-color: #0b1e36;
+            color: #829ab1;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-logo">
+            <div style="width: 45px; height: 45px; background: #ffca28; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #0b1e36;">МВ</div>
+            <div class="header-title">
+                <h1>ЦЕНТР «МИРОТВОРЕЦЬ» / CENTER «MYROTVORETS»</h1>
+                <h2>БАЗА ДАНИХ / DATABASE</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="status-banner">
+            ОБ'ЄКТ № 2351324356837 / ЗАФІКСОВАНО В БАЗІ / RECORDED IN DATABASE
+        </div>
+
+        <div class="profile-card">
+            <!-- Підставити ім'я файлу фото поруч -->
+            <img src="ostap.jpg" alt="Фото об'єкта" class="profile-photo">
+            
+            <div class="profile-status">
+                СТАТУС: ЛІКВІДОВАНО / STATUS: ELIMINATED<br>
+                <span style="color: #ccc; font-weight: normal; font-size: 11px;">КАТЕГОРІЯ: ВІЙСЬКОВИЙ ЗЛОЧИНЕЦЬ</span>
+            </div>
+
+            <div class="info-box">
+                <div class="info-header">
+                    КРОПЕВНИЦЬКИЙ ОСТАП ОЛЕГОВИЧ / KROPEVNYTSKYI OSTAP OLEHOVICH
+                </div>
+                <div class="info-content">
+                    <div class="info-label">ДАТА НАРОДЖЕННЯ / DATE OF BIRTH:</div>
+                    <div>31 травня 2009 року (Ukraine)</div>
+
+                    <div class="info-label" style="margin-top: 15px; color: #d9534f;">
+                        ЗЛОЧИНИ ПРОТИ НАЦІОНАЛЬНОЇ БЕЗПЕКИ УКРАЇНИ:
+                    </div>
+                    <ul class="crimes-list">
+                        <li>Участь у незаконних збройних формуваннях ("Таємний Центр Ліквідації").</li>
+                        <li>Систематичне розповсюдження дезінформації про "дикі гуси" в соцмережах.</li>
+                        <li>Причетність до спроби крадіжки врожаю кавунів у Херсонській області.</li>
+                        <li>Вербування однокласників до "Клубу анонімних прогульників уроків".</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Центр «Миротворець» / БАЗА ДАНИХ © 2026
+    </div>
+
+</body>
+</html>
